@@ -18,13 +18,13 @@ export class QuotesdetailsComponent implements OnInit {
   }
   
   
-  numberOfLikes: number=0;
+  
   likeButtonClick(){
-     this.numberOfLikes++;
+     this.quote.likes++;
   }
   
   dislikeButtonClick(){
-     this.numberOfLikes--;
+     this.quote.dislikes++;
   }   
   
   
