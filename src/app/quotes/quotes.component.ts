@@ -18,14 +18,14 @@ export class QuotesComponent implements OnInit {
 
   toggleDetails(index){
     this.quotes[index].showDetails = !this.quotes[index].showDetails
-  }
-  addNewQuote(quote){
+   }
+   addNewQuote(quote){
     let quoteLength = this.quotes.length;
     quote.id = quoteLength + 1;
     quote.completeDate = new Date(quote.completeDate)
     this.quotes.push(quote)
-  }
-  deleteQuote( isDelete,index){
+   }
+   deleteQuote( isDelete,index){
       if(isDelete){
         let isDelete = confirm(`Are you sure you want to delete this quote?`)
 
@@ -33,9 +33,9 @@ export class QuotesComponent implements OnInit {
           this.quotes.splice(index,1)
 
     
+       }
       }
-      }
-  }
+    }
 
   
   constructor() { }
