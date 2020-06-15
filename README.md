@@ -11,6 +11,9 @@
   * Push the changes to the remote repo.
   * Add the gh-pages link at the description section of the remote repo.
 
+## Behaviour Driven Development
+ * Upon clicking the "Add Quote" button, the quote is added to the existing quotes.
+ * The "Show Details" button toggles the details of the quote when clicked on.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.8.
 
