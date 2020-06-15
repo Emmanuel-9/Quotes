@@ -3,3 +3,6 @@ p{
     font-style: italic;
     font-size: medium;
 }
+#post{
+    float: right;
+}
