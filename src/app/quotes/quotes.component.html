@@ -5,7 +5,7 @@
         <hr>
         <ul>
           <div *ngFor='let quote of quotes; let i = index'>
-            <li><strong>{{quote.name|uppercase}}</strong> was edited on <em>{{quote.entryDate|date}}</em></li> 
+            <li><strong>{{quote.name|uppercase}}</strong> </li> 
              <button class="btn btn-info" (click)='toggleDetails(i)'>Show Details</button>
              <app-quotesdetails *ngIf='quote.showDetails' [quote]='quote'(isDelete)='deleteQuote($event,i)'></app-quotesdetails>
           </div>   
