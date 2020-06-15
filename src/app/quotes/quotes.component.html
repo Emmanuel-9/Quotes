@@ -1,0 +1,19 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Quotes</h1>
+        <hr>
+        <ul>
+          <div *ngFor='let quote of quotes; let i = index'>
+            <li><strong>{{quote.name|uppercase}}</strong> was edited on <em>{{quote.entryDate|date}}</em></li> 
+             <button class="btn btn-info" (click)='toggleDetails(i)'>Show Details</button>
+             <app-quotesdetails *ngIf='quote.showDetails' [quote]='quote'(isDelete)='deleteQuote($event,i)'></app-quotesdetails>
+          </div>   
+         </ul>
+    </div>
+      <div class="col-md-6">
+        <app-quotesform (addQuote)="addNewQuote($event)"></app-quotesform>
+      </div>
+        
+  </div>      
+</div>
