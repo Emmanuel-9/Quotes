@@ -1,9 +1,9 @@
-   <p>{{quote.author}}</p>
-   <p>{{quote.editor}}</p>
-   <p>{{quote.entryDate|dateCount}} days have passed since the quote was created.</p>
-   <p>{{numberOfLikes}}</p>
-    <button (click)='likeButtonClick()'class="btn btn-info">Like</button>&nbsp;
-    <button (click)='dislikeButtonClick()'class="btn btn-danger">Dislike</button><br><br>
+   <p>Author: {{quote.author}}</p>
+   <p>Editor: {{quote.editor}}</p>
+   <p id="post">Posted: <em>{{quote.entryDate|date}}</em></p>
+   <p>Age of quote: {{quote.entryDate|dateCount}} days.</p>
+    <button (click)='likeButtonClick()'class="btn btn-info">{{quote.likes}}&nbsp; Like</button>&nbsp;
+    <button (click)='dislikeButtonClick()'class="btn btn-danger">{{quote.dislikes}}&nbsp; Dislike</button><br><br>
     <button (click)='deleteQuote(true)' class="btn btn-danger">Delete</button>
     
 
