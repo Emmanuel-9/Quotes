@@ -1,4 +1,15 @@
-# QUOTES
+# Project Name: QUOTES
+
+## Author: Emmanuel Orega
+
+## Description: An app where a user write a quote and is added to the existing quotes upon clicking on the "Add Quote" button.
+
+## Set Up instructions
+  * Create a remote repository on Github.
+  * Add the remote repo on the  local repository.
+  * Commit all changes made.
+  * Push the changes to the remote repo.
+  * Add the gh-pages link at the description section of the remote repo.
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.8.
